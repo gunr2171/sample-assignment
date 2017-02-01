@@ -20,6 +20,16 @@ namespace UnitTests
         }
 
         [Fact]
+        public void AddTwoNumbers_ExposingFlaw()
+        {
+            var n1 = 4;
+            var n2 = 5;
+            var expected = 9;
+            var actual = Functions.AddTwoNumbers(n1, n2);
+            Assert.Equal(expected, actual);
+        }
+
+        [Fact]
         public void SubtractTwoNumbers()
         {
             var n1 = 10;
